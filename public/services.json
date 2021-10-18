@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "name":"CARDIOLOGY",
+        "description":"this is cardiology",
+        "cost":""
+    },
+    {
+        "id":2,
+        "name":"NEUROLOGY",
+        "description":"this is cardiology",
+        "cost":""
+    },
+    {
+        "id":3,
+        "name":"HEMATOLOGY",
+        "description":"this is cardiology",
+        "cost":""
+    },
+    {
+        "id":4,
+        "name":"ORTHOPEDICS",
+        "description":"this is cardiology",
+        "cost":""
+    },
+    {
+        "id":1,
+        "name":"NUCLEAR MEDICINE",
+        "description":"this is cardiology",
+        "cost":""
+    },
+    {
+        "id":5,
+        "name":"GENERAL SURGERY",
+        "description":"this is cardiology",
+        "cost":""
+    },
+    {
+        "id":6,
+        "name":"ENT(EAR, NOSE & THROAT)",
+        "description":"this is cardiology",
+        "cost":""
+    }
+]
