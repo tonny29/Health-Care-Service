@@ -13,6 +13,7 @@
     "react-bootstrap": "^2.0.0-rc.1",
     "react-dom": "^17.0.2",
     "react-font-style": "0.0.11",
+    "react-rating": "^2.0.5",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3"
   },

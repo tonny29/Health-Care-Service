@@ -8,7 +8,11 @@
         "serName":"Short-Term Hospitalization",
         "serDes":"Short-term inpatient hospitalization may be the right choice to help your loved one in an emergency. Short-term inpatient hospitalization is best for clients who are at immediate risk of harming themselves or others or who are experiencing severe psychosis.",
         "serImg":"https://www.hse.ie/portal/eng/about/who/acute-hospitals-division/hospital-patient-care-image.jpg",
-        "serCost":"77"
+        "serCost":"77",
+        "star":4,
+        "locationMap":"http://dcimch.com/hospital/wp-content/uploads/2016/11/Capture.jpg",
+        "hospital":"Uttara Central Hospital & Diagnostic Center",
+        "address":"House 01, Road 07 Jashim Uddin Over Bridge Open 24 hours · 01711-182522"
     },
     {
         "id":2,
@@ -19,7 +23,11 @@
         "serName":"Emergency Room Services",
         "serDes":"An emergency department (ED), also known as an accident & emergency department (A&E), emergency room (ER), emergency ward (EW) or casualty department, is a medical treatment facility specializing in emergency medicine, the acute care of patients who present without prior appointment; either by their own means or by that of an ambulance. The emergency department is usually found in a hospital or other primary care center.",
         "serImg":"https://post.healthline.com/wp-content/uploads/2020/09/3509-Emergency_Room-1296x728-header-1200x628.jpg",
-        "serCost":"66"
+        "serCost":"66",
+        "star":3,
+        "locationMap":"https://www.dsce.edu.bd/wp-content/uploads/2017/08/DSCE-Location3.jpg",
+        "hospital":"Central Hospital Ltd.",
+        "address":"House # 2 Rd No. 5 Open 24 hours · 02-9660015"
     },
     {
         "id":3,
@@ -30,7 +38,11 @@
         "serName":"General And Specialty Surgical Services",
         "serDes":"The general surgeon is trained to provide surgical care for the whole patient. ... It includes head and neck surgery, pediatric surgery, surgical critical care, surgical oncology, trauma and burns, transplants and vascular surgery.",
         "serImg":"https://i.pinimg.com/originals/7e/43/34/7e43347727b33c7498857c1ecae924fc.jpg",
-        "serCost":"11"
+        "serCost":"11",
+        "star":4,
+        "locationMap":"https://www.uhlbd.com/backend/web/post_uploads/1468923345map.jpg",
+        "hospital":"Dhaka Central International Medical College & Hospital",
+        "address":"2, 1 Ring Rd Open 24 hours · 02-9128727"
     },
     {
         "id":4,
@@ -41,7 +53,11 @@
         "serName":"X-Ray/Radiology Services",
         "serDes":"An x-ray, which is short for x-radiation, is a type of imaging test that has been utilized for years. With this technology, doctors can see your bones, muscle and more without having to make an incision. This helps them diagnose, treat and monitor a number of different medical conditions.",
         "serImg":"https://healthcare.utah.edu/radiology/images/foot-x-ray.jpg",
-        "serCost":"22"
+        "serCost":"22",
+        "star":4,
+        "locationMap":"https://media-eng.dhakatribune.com/uploads/2018/11/web-jatrabari-1542352975160.jpg",
+        "hospital":"Central Hospital Doctor's Chamber",
+        "address":"AK Complex, 19 · In A.K. Complex Open 24 hours · 02-9660015"
     },
     {
         "id":5,
@@ -52,7 +68,11 @@
         "serName":"Laboratory Services",
         "serDes":"A medical laboratory or clinical laboratory is a laboratory where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease. ... Medical laboratories vary in size and complexity and so offer a variety of testing services.",
         "serImg":"https://www.nipro-group.com/sites/default/files/styles/vrije_dimensie/public/2019-11/Lab%20services%20-%20shutterstock_88062910.jpg?itok=08Gp9uD1",
-        "serCost":"33"
+        "serCost":"33",
+        "star":4,
+        "locationMap":"http://dcimch.com/hospital/wp-content/uploads/2016/11/Capture.jpg",
+        "hospital":"Savar Central Hospital Ltd.",
+        "address":"Savar Union Open 24 hours · 01914-255407"
     },
     {
         "id":6,
@@ -63,6 +83,10 @@
         "serName":"Blood Services",
         "serDes":"Blood banking is the process that takes place in the lab to make sure that donated blood, or blood products, are safe before they are used in blood transfusions and other medical procedures. Blood banking includes typing the blood for transfusion and testing for infectious diseases.",
         "serImg":"https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1024-512,f_auto,q_auto:best/newscms/2019_24/2895091/190613-donating-blood-cs-406p.jpg",
-        "serCost":"44"
+        "serCost":"44",
+        "star":5,
+        "locationMap":"http://dcimch.com/hospital/wp-content/uploads/2016/11/Capture.jpg",
+        "hospital":"Central Police Hospital",
+        "address":"Central Police Hospital, 2 DIT Ave Open 24 hours · 01320-225598"
     }
 ]

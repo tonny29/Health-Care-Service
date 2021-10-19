@@ -1,26 +1,33 @@
 import React from 'react';
 import UseAuth from '../../Hooks/UseAuth';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+
+import { Col } from 'react-bootstrap';
+import './Contact.css';
+
 
 const Contact = () => {
     const {signInWithGoogle,user}=UseAuth();
     console.log('user',user);
     return (
-        <div className="btn-style" style={{color:"white"}}>
-        <h2><FontAwesomeIcon icon={faUser} />Please Log In Frist</h2>
-                <form onSubmit="">
-                    <input type="email" placeholder='enter your mail' />
-                    <br /><br />
-                    <input type="password" placeholder='enter your password' />
-                    <br /><br />
-                    <input type="password" placeholder='re-enter your password' />
-                    <br /><br />
-                    <input type="submit" value='Ssubmit' />
+        <div className="btn-style contact-style row">
+            <Col lg={6}>
+            </Col>
+                <Col lg={6}>
+                <form>
+                    <div className="input">
+                    <h2>Please Sign In </h2>
+                    <p>Email: <input type="email" placeholder='enter your mail' /></p>
+                    <p>Password: <input type="password" placeholder='enter your password' /></p>
+                    <p>Re-enter:<input type="password" placeholder='re-enter your password' /></p>
+                    <br />
+                    <input type="submit" value='Submit' />
+                    <p>Already have an account?<Link to="/login">Login</Link></p>
+                    <button onClick={signInWithGoogle}><i class="fab fa-google"></i>{' '}Google Sign In</button>
+                    </div>
                 </form>
-                <p>Already have an account?<Link to="/login">Login</Link></p>
-                <button onClick={signInWithGoogle}>Google Sign In</button>
+               
+                </Col>
         </div>
     );
 };
