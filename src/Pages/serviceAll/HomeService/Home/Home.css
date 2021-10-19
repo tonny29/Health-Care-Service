@@ -1,0 +1,41 @@
+.hospital-banner{
+    width: 100%;
+    margin-left: 0px;
+    background-image: url(https://i.pinimg.com/originals/1f/7f/dd/1f7fdd78b67bf83cdb0ad02915b8b410.jpg);
+    background-size: cover;
+    min-height: 400px;
+    background-repeat: no-repeat;
+}
+
+.side-banner img{
+    width: 350px;
+    height: 500px;
+    border-radius: 70%;
+}
+.side-text{
+    margin-left: 110px;
+    border: 2px solid white;
+    background-color: rgb(155, 216, 245);
+    border-radius: 100px;
+    padding: 20px;
+    
+    width: 45%;
+    height: 90%;
+}
+.banner-text{
+    position: absolute;
+    top: 150px;
+    left: 35%;
+    font-weight: 600;
+}
+.card{
+    height: 600px;
+    background-color: rgb(220, 245, 255);
+    font-weight: 600;
+}
+@media screen and (min-width:768px){
+    .card-style img{
+        height: 300px;
+        
+    }
+}

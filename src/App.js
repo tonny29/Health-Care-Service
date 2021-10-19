@@ -1,10 +1,47 @@
+import { BrowserRouter,Switch,Route } from 'react-router-dom';
 import './App.css';
-import Header from './Pages/Header/Header';
+import AuthProvider from './Context/AuthProvider';
+import Aboutus from './Pages/Aboutus/Aboutus';
+import Contact from './Pages/Contact/Contact';
+import Login from './Pages/Login/Login';
+import NavBar from './Pages/Navbar/NavBar';
+import Notfound from './Pages/Notfound/Notfound';
+import Home from './Pages/serviceAll/HomeService/Home/Home';
+import ServicesLoad from './Pages/Services/ServicesLoad/ServicesLoad';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <AuthProvider>
+        <BrowserRouter>
+        <NavBar></NavBar>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route  path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/aboutus">
+            <Aboutus></Aboutus>
+          </Route>
+          <Route path="/services">
+            <ServicesLoad></ServicesLoad>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/*">
+            <Notfound></Notfound>
+          </Route>
+        </Switch>
+        <footer className="footer-style">This is footer here i am jannatul nayem tonny</footer>
+        </BrowserRouter>
+      </AuthProvider>
+      
     </div>
   );
 }

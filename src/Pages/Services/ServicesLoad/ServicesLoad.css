@@ -1,0 +1,22 @@
+.all-services{
+    margin: 20px;
+}
+.services-name{
+    background-image: url(https://clutchinfotech.co.in/wp-content/uploads/2020/12/Hospital-Affiliations-Small.jpg);
+     /* background-repeat: no-repeat; */
+    /* background-size: cover;  */
+    min-height: 400px;
+    margin-bottom:10px;
+    margin-left: 0px;
+    width: 100%;
+}
+.services-name p{
+    background-color: rgba(5, 5, 5, 0.438);
+    color: white;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin-top: 20%;
+    font-size: large;
+    font-weight: 700;
+    padding: 10px;
+}

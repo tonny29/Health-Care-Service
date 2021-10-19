@@ -2,43 +2,67 @@
     {
         "id":1,
         "name":"CARDIOLOGY",
-        "description":"this is cardiology",
-        "cost":""
+        "description":"Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system.",
+        "cost":"22",
+        "image":"https://aymanpolyclinic.com/wp-content/uploads/2021/02/cardiology-1.jpg",
+        "serName":"Short-Term Hospitalization",
+        "serDes":"Short-term inpatient hospitalization may be the right choice to help your loved one in an emergency. Short-term inpatient hospitalization is best for clients who are at immediate risk of harming themselves or others or who are experiencing severe psychosis.",
+        "serImg":"https://www.hse.ie/portal/eng/about/who/acute-hospitals-division/hospital-patient-care-image.jpg",
+        "serCost":"77"
     },
     {
         "id":2,
         "name":"NEUROLOGY",
-        "description":"this is cardiology",
-        "cost":""
+        "description":"Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems, blood vessels, and all effector tissue, such as muscle.",
+        "cost":"12",
+        "image":"http://drsarangrote.com/myimg/NeuroSurgery.jpg",
+        "serName":"Emergency Room Services",
+        "serDes":"An emergency department (ED), also known as an accident & emergency department (A&E), emergency room (ER), emergency ward (EW) or casualty department, is a medical treatment facility specializing in emergency medicine, the acute care of patients who present without prior appointment; either by their own means or by that of an ambulance. The emergency department is usually found in a hospital or other primary care center.",
+        "serImg":"https://post.healthline.com/wp-content/uploads/2020/09/3509-Emergency_Room-1296x728-header-1200x628.jpg",
+        "serCost":"66"
     },
     {
         "id":3,
         "name":"HEMATOLOGY",
-        "description":"this is cardiology",
-        "cost":""
+        "description":"Hematology is the branch of medicine concerned with the study of the cause, prognosis, treatment, and prevention of diseases related to blood. ",
+        "cost":"24",
+        "image":"https://previews.123rf.com/images/angellodeco/angellodeco2101/angellodeco210100001/161692438-technician-with-blood-sample-for-analysis-in-the-hematology-lab-doctor-holding-blood-tube-test-in-th.jpg",
+        "serName":"General And Specialty Surgical Services",
+        "serDes":"The general surgeon is trained to provide surgical care for the whole patient. ... It includes head and neck surgery, pediatric surgery, surgical critical care, surgical oncology, trauma and burns, transplants and vascular surgery.",
+        "serImg":"https://i.pinimg.com/originals/7e/43/34/7e43347727b33c7498857c1ecae924fc.jpg",
+        "serCost":"11"
     },
     {
         "id":4,
         "name":"ORTHOPEDICS",
-        "description":"this is cardiology",
-        "cost":""
-    },
-    {
-        "id":1,
-        "name":"NUCLEAR MEDICINE",
-        "description":"this is cardiology",
-        "cost":""
+        "description":"Orthopaedic surgery or orthopaedics, is the branch of surgery concerned with conditions involving the musculoskeletal system.",
+        "cost":"43",
+        "image":"https://doclists.in/wp-content/uploads/2021/07/Best-Orthopedic-Surgeon-in-Kanpur.jpg",
+        "serName":"X-Ray/Radiology Services",
+        "serDes":"An x-ray, which is short for x-radiation, is a type of imaging test that has been utilized for years. With this technology, doctors can see your bones, muscle and more without having to make an incision. This helps them diagnose, treat and monitor a number of different medical conditions.",
+        "serImg":"https://healthcare.utah.edu/radiology/images/foot-x-ray.jpg",
+        "serCost":"22"
     },
     {
         "id":5,
         "name":"GENERAL SURGERY",
-        "description":"this is cardiology",
-        "cost":""
+        "description":"General surgery is a surgical specialty that focuses on abdominal contents including the esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
+        "cost":"55",
+        "image":"https://i2.wp.com/www.finddoctor24.com/wp-content/uploads/2018/04/General-Surgeon.jpg?resize=642%2C421&ssl=1",
+        "serName":"Laboratory Services",
+        "serDes":"A medical laboratory or clinical laboratory is a laboratory where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease. ... Medical laboratories vary in size and complexity and so offer a variety of testing services.",
+        "serImg":"https://www.nipro-group.com/sites/default/files/styles/vrije_dimensie/public/2019-11/Lab%20services%20-%20shutterstock_88062910.jpg?itok=08Gp9uD1",
+        "serCost":"33"
     },
     {
         "id":6,
-        "name":"ENT(EAR, NOSE & THROAT)",
-        "description":"this is cardiology",
-        "cost":""
+        "name":"MEDICINE",
+        "description":"Medicine is the science and practice of caring for a patient, managing the diagnosis, prognosis, prevention, treatment, palliation of their injury or disease, and promoting their health.",
+        "cost":"32",
+        "image":"https://previews.123rf.com/images/lenetsnikolai/lenetsnikolai1611/lenetsnikolai161100074/65621714-male-medicine-doctor-hands-hold-jar-of-pills-and-type-something-on-laptop-computer-keyboard-panacea-.jpg",
+        "serName":"Blood Services",
+        "serDes":"Blood banking is the process that takes place in the lab to make sure that donated blood, or blood products, are safe before they are used in blood transfusions and other medical procedures. Blood banking includes typing the blood for transfusion and testing for infectious diseases.",
+        "serImg":"https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1024-512,f_auto,q_auto:best/newscms/2019_24/2895091/190613-donating-blood-cs-406p.jpg",
+        "serCost":"44"
     }
 ]
