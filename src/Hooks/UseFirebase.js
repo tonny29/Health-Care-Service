@@ -10,14 +10,12 @@ const UseFirebase=()=>{
     const googleProvider = new GoogleAuthProvider();
     const auth = getAuth();
 
-    // google signin function==============================//
     const signInWithGoogle=()=>{
         setIsloading(true)
       return  signInWithPopup(auth, googleProvider)
 
         
     }  
-    //signout handler=======================================//
     const logOut=()=>{ 
         setIsloading(true)     
         signOut(auth)
@@ -27,7 +25,7 @@ const UseFirebase=()=>{
             setIsloading(false)
         })
     }
-    // on Auth state change==================================//
+   
     useEffect(()=>{
         onAuthStateChanged(auth,(user)=>{
             if(user){
@@ -49,46 +47,5 @@ const UseFirebase=()=>{
             }
     );
 };
-//     const [user,setUser]=useState({});
-//     const [isLoading,setIsLoading]=useState(true);
-
-//     const auth=getAuth();
-
-//     const signInWithGoogle=()=>{
-//     const googleProvider=new GoogleAuthProvider();
-//     signInWithPopup(auth,googleProvider)
-//     .then(result=>{
-//         const user=result.user;
-//         setUser(user);
-//     })
-//     .finally(()=>setIsLoading(false))
-//     }
-//     const logOut=()=>{
-//         signOut(auth)
-//         .then(()=>{setUser()})
-//         .finally(()=>setIsLoading(false));
-//     }
-//     useEffect(()=>{
-
-//     const authapply=onAuthStateChanged(auth,user=>{
-//         console.log('this is me');
-//     if (user) {
-//       setUser({user});
-//     }
-//     else{
-//         setUser({});
-//     }
-//     setIsLoading(false);
-//     return ()=>authapply();
-//    },[auth]);
-   
-//     })
-//     return{
-//         user,
-//         signInWithGoogle,
-//         logOut,
-//         isLoading
-//     }
-// }
 
 export default UseFirebase;
