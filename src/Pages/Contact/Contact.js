@@ -14,7 +14,7 @@ const Contact = () => {
             <Col lg={6}>
             </Col>
                 <Col lg={6}>
-                <form>
+                <div>
                     <div className="input">
                     <h2>Please Sign In </h2>
                     <p>Email: <input type="email" placeholder='enter your mail' /></p>
@@ -25,7 +25,7 @@ const Contact = () => {
                     <p>Already have an account?<Link to="/login">Login</Link></p>
                     <button onClick={signInWithGoogle}><i class="fab fa-google"></i>{' '}Google Sign In</button>
                     </div>
-                </form>
+                    </div>
                
                 </Col>
         </div>

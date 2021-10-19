@@ -1,11 +1,13 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar,Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome,faTaxi,faInfoCircle,faPhone,faUser } from '@fortawesome/free-solid-svg-icons';
 import './NavBar.css';
+import UseAuth from '../../Hooks/UseAuth';
 
 const NavBar = () => {
+    const{user,logOut}=UseAuth()
     return (
         <div className="btn-style">
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -20,7 +22,11 @@ const NavBar = () => {
                     <Nav.Link as={Link} to="/services">Services{' '}<FontAwesomeIcon icon={faTaxi}/></Nav.Link>
                     <Nav.Link as={Link} to="/aboutus">About Us{' '}<FontAwesomeIcon icon={faInfoCircle}/></Nav.Link>
                     <Nav.Link as={Link} to="/contact">Contact{' '}<FontAwesomeIcon icon={faPhone}/></Nav.Link>
+                    {
+                    user?.email?
+                    <Button style={{margin:"5px"}} onClick={logOut} variant="light">Logout</Button>:
                     <Nav.Link as={Link} to="/login">LogIn{' '}<FontAwesomeIcon icon={faUser}/></Nav.Link>
+                    }
                     </Navbar.Collapse>
                 </Container>
              </Navbar>

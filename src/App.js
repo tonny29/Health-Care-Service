@@ -6,8 +6,10 @@ import Contact from './Pages/Contact/Contact';
 import Login from './Pages/Login/Login';
 import NavBar from './Pages/Navbar/NavBar';
 import Notfound from './Pages/Notfound/Notfound';
+import Detail from './Pages/serviceAll/DetailService/Detail/Detail';
 import Home from './Pages/serviceAll/HomeService/Home/Home';
 import ServicesLoad from './Pages/Services/ServicesLoad/ServicesLoad';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -34,11 +36,14 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
+          <PrivateRoute path="/detail/:detailId">
+            <Detail></Detail>
+          </PrivateRoute>
           <Route path="/*">
             <Notfound></Notfound>
           </Route>
         </Switch>
-        <footer className="footer-style">This is footer here i am jannatul nayem tonny</footer>
+        <footer className="footer-style">Central Medical Hospital . centralhospita@gmail.com  uttara-1230</footer>
         </BrowserRouter>
       </AuthProvider>
       

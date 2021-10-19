@@ -6,12 +6,13 @@ import './Login.css';
 
 const Login = () => {
     const {signInWithGoogle}=UseAuth();
+    // console.log(user);
     return (
         <div className="btn-style login-style row">
              <Col lg={6}>
              </Col>   
                 <Col lg={6}>
-                <form>
+                  
                   <div className="input">
                   <h2>Login</h2>
                     <input type="email" placeholder='Enter your email'/>
@@ -24,7 +25,7 @@ const Login = () => {
                     <br /><br />
                     <button onClick={signInWithGoogle} className="button-style"><i class="fab fa-google"></i>{' '}Google Sign In</button>
                   </div>
-                </form>
+               
                 </Col>
             </div>
     );
