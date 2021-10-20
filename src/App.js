@@ -3,6 +3,7 @@ import './App.css';
 import AuthProvider from './Context/AuthProvider';
 import Aboutus from './Pages/Aboutus/Aboutus';
 import Contact from './Pages/Contact/Contact';
+import Footer from './Pages/Footer/Footer';
 import Login from './Pages/Login/Login';
 import NavBar from './Pages/Navbar/NavBar';
 import Notfound from './Pages/Notfound/Notfound';
@@ -43,7 +44,7 @@ function App() {
             <Notfound></Notfound>
           </Route>
         </Switch>
-        <footer className="footer-style">Central Medical Hospital . centralhospita@gmail.com  uttara-1230</footer>
+        <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
       

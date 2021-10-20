@@ -1,29 +1,91 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import React, { useState } from 'react';
+import { Link,useLocation,useHistory } from 'react-router-dom';
 import UseAuth from '../../Hooks/UseAuth';
 import { Col } from 'react-bootstrap';
 import './Login.css';
 
 const Login = () => {
-    const {signInWithGoogle}=UseAuth();
+    const {signInWithGoogle,setUser,setIsloading}=UseAuth();
     // console.log(user);
+    const [email,setEmail]=useState('');
+    const [password,setPassword]=useState('');
+    const [error,setError]=useState('');
+    const [success,setSuccess]=useState('');
+     // emailHandlar\\
+    const emailHandlar=(e)=>{
+      const email=e.target.value;
+      setEmail(email);  
+  }
+  // redirect route google signin \\
+  const location=useLocation();
+  const history=useHistory();
+  const redirectUrl=location.state?.from || '/home';
+  const googleSignInRedirect=()=>{
+    signInWithGoogle()
+    .then((result)=>{
+      history.push(redirectUrl);
+    })
+    .finally(()=>{
+      setIsloading(false)
+    })
+  }
+  // redirect route passeord login \\
+  const redirectPassword=location.state?.from || '/home';
+  const passwordSignInRedirect=(e)=>{
+    e.preventDefault();
+    passwordLogInHandlar()
+    .then((result) => {
+      const user = result.user;
+      setUser(user); 
+      history.push(redirectPassword);
+      setSuccess("Yeaaa!! Seccessfully Loged-In")
+      console.log(user);
+    })
+    .catch((error) => {
+      const message = error.message;
+      setError(message);
+    });
+
+  }
+  // PasswordHandlar\\
+  const passwordHandlar=(e)=>{
+      const password=e.target.value;
+      setPassword(password);
+  }
+
+    const passwordLogInHandlar=(e)=>{
+      const auth=getAuth();
+     return signInWithEmailAndPassword(auth, email, password)
+        
+    }
     return (
         <div className="btn-style login-style row">
              <Col lg={6}>
              </Col>   
                 <Col lg={6}>
-                  
                   <div className="input">
                   <h2>Login</h2>
-                    <input type="email" placeholder='Enter your email'/>
-                    <br /><br />
-                    <input type="password" placeholder='Enter your password'/>
-                    <br /><br />
-                    <input type="submit" value="Submit"/>
+                  <form onSubmit={passwordSignInRedirect}>
+                    <label htmlFor="email"></label>
+                      <input onChange={emailHandlar} type="email" placeholder='Enter your email' id="email"/>
+                      <br /><br />
+
+                      <label htmlFor="password"></label>
+                      <input onChange={passwordHandlar} type="password" placeholder='Enter your password'id="password"/>
+                      <br /><br />
+                      
+                      <input type="submit" value="Submit"/>
+                      <br />
+                      <p className="text-success">{success}</p>
+                       <p className="text-danger">{error}</p>
+                      
+                      <br />
+                  </form>
                     <p>haven't any account?<Link to='/contact'>Create Account</Link></p>
                 
                     <br /><br />
-                    <button onClick={signInWithGoogle} className="button-style"><i class="fab fa-google"></i>{' '}Google Sign In</button>
+                    <button onClick={googleSignInRedirect} className="button-style"><i class="fab fa-google"></i>{' '}Google Sign In</button>
                   </div>
                
                 </Col>

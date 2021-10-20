@@ -1,0 +1,15 @@
+.detail-area{
+    background-image: url(https://www.teahub.io/photos/full/8-83110_sky-blue-color-hd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    height: 650px;
+    color: white;
+    
+}
+.detail-area img{
+    border: 2px solid black;
+    border-radius: 100%; 
+    width: 400px;
+    height: 400px;
+}
