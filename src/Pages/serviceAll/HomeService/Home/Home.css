@@ -5,16 +5,20 @@
     background-size: cover;
     min-height: 400px;
     background-repeat: no-repeat;
+    font-weight: 600;
 }
-
+.hospital-banner h1{
+    font-weight: 900;
+}
 .side-banner img{
     width: 350px;
     height: 500px;
     border-radius: 70%;
+    border: 2px solid rgb(8, 0, 0);
 }
 .side-text{
     margin-left: 110px;
-    border: 2px solid white;
+    border: 2px solid rgb(59, 28, 28);
     background-color: rgb(155, 216, 245);
     border-radius: 100px;
     padding: 20px;

@@ -7,8 +7,8 @@ import './Contact.css';
 
 
 const Contact = () => {
-    // ----------------useauth------------------ \\
-    const {signInWithGoogle,user}=UseAuth();
+    // useauth \\
+    const {signInWithGoogle}=UseAuth();
     const [email,setEmail]=useState('');
     const [password,setPassword]=useState('');
     const [error,setError]=useState('');
@@ -52,20 +52,21 @@ const Contact = () => {
                         <form onSubmit={registrationHandlar}>
                             <h2>Please Sign In </h2>
                             <label htmlFor="frist"></label>
-                            <p><input type="name" placeholder=' frist name'id="frist"/></p>
-
+                            <input type="name" placeholder=' frist name'id="frist"/>
+                            <br /><br />
                             <label htmlFor="last"></label>
-                            <p><input type="email" placeholder='last name' id="last" /></p>
-
+                            <input type="email" placeholder='last name' id="last" />
+                            <br /><br />
                             <label htmlFor="mail"></label>
-                            <p><input onChange={emailHandlar} type="email" placeholder='enter your email' id="mail" required/></p>
-
+                            <input onChange={emailHandlar} type="email" placeholder='enter your email' id="mail" required/>
+                            <br /><br />
                             <label htmlFor="password"></label>
-                            <p><input onChange={passwordHandlar} type="password" placeholder='enter your password' id="password" required/></p>
-                            <p><input type="password" placeholder='re-enter your password' required/></p>
-                            <br />
+                            <input onChange={passwordHandlar} type="password" placeholder='enter your password' id="password" required/>
+                            <br /><br />
+                           <input type="password" placeholder='re-enter your password' required/>
+                           <br /><br />
                             <input type="submit" value='Submit' />
-                            <br />
+                            
                             <p className="text-success">{success}</p>
                             <p className="text-danger">{error}</p>
                         </form>

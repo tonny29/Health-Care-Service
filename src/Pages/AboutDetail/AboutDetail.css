@@ -1,5 +1,5 @@
 .icon-color{
-    color: yellow;
+    color: rgb(143, 143, 53);
 }
 
 .style-add{
@@ -11,7 +11,7 @@
     background-color: rgba(135, 207, 235, 0.61);
     width: 45%;
     font-weight: 800;
-    color: white;
+    color: black;
     padding: 20px;
     border-radius: 20px;
     

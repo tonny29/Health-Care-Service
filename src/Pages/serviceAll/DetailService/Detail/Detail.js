@@ -9,7 +9,7 @@ const Detail = () => {
     const details=fakedata.find(data=>data.id===parseInt(detailId));
     return (
         <div className="detail-area btn-style">
-            <h1>This is Detail Id : {detailId}</h1>
+            <h1>This Detail Id Is: {detailId}</h1>
             <img src={details.image} alt="" />
             <h2>Name Of Service : {details.name}</h2>
               <p>{details.description}</p>

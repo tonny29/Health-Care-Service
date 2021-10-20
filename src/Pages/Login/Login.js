@@ -12,6 +12,7 @@ const Login = () => {
     const [password,setPassword]=useState('');
     const [error,setError]=useState('');
     const [success,setSuccess]=useState('');
+    console.log(error,success);
      // emailHandlar\\
     const emailHandlar=(e)=>{
       const email=e.target.value;
@@ -74,17 +75,10 @@ const Login = () => {
                       <label htmlFor="password"></label>
                       <input onChange={passwordHandlar} type="password" placeholder='Enter your password'id="password"/>
                       <br /><br />
-                      
                       <input type="submit" value="Submit"/>
-                      <br />
-                      <p className="text-success">{success}</p>
-                       <p className="text-danger">{error}</p>
-                      
                       <br />
                   </form>
                     <p>haven't any account?<Link to='/contact'>Create Account</Link></p>
-                
-                    <br /><br />
                     <button onClick={googleSignInRedirect} className="button-style"><i class="fab fa-google"></i>{' '}Google Sign In</button>
                   </div>
                

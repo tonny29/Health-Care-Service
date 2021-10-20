@@ -1,5 +1,4 @@
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
-import './App.css';
 import AuthProvider from './Context/AuthProvider';
 import Aboutus from './Pages/Aboutus/Aboutus';
 import Contact from './Pages/Contact/Contact';
@@ -11,6 +10,7 @@ import Detail from './Pages/serviceAll/DetailService/Detail/Detail';
 import Home from './Pages/serviceAll/HomeService/Home/Home';
 import ServicesLoad from './Pages/Services/ServicesLoad/ServicesLoad';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import './App.css';
 
 function App() {
   return (
