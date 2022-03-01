@@ -16,7 +16,7 @@ const Home = () => {
             <div className="hospital-banner btn-style row">
                     <Col lg={4}></Col>
                     <Col lg={8}>
-                    <h1>CENTRAL HOSPITAL</h1>
+                    <h1>CENTRAL HOSPITAL LTD</h1>
                     <p>Our hospital benefits are insurance benefits that provide coverage for expenses associated with visiting a hospital for health care.These expenses can include things like room and board, medical treatments, medical supplies, etc. Without hospital benefits, hospital visits are extremely expensive.We provide care that is respectful of the <br />   patient's needs and preferences, and allow the values to guide care decisions, is a cornerstone of high-quality healthcare Safe.Healthcare providers have prioritize our patient's safety in every interaction.</p>
                     <button>About More</button>{' '}
                     <button>Contact Us</button>

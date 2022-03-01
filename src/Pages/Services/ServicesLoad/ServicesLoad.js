@@ -12,7 +12,7 @@ const ServicesLoad = () => {
     },[])
     return (
         <div>
-             <h1 style={{color:"white"}}>(+) Our Hospitality Services Near By You (+)</h1>
+             <h1 style={{color:"black"}}>(+) Our Hospitality Services Near By You (+)</h1>
             <div className="services-name row">
                 <Col col-lg-4>
                     <p>short-term hospitalization</p>
